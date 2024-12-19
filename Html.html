@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cheetsheet.css">
+</head>
+<body>
+    <a class= "home" href="personal.html">Home</a>
+    <h1 class = "head">HTML ELEMENTS</h1>
+        <h3>Links</h3>
+        <p>This snippet demonstrates how to create hyperlinks using the <code>a</code> tag. The <code>href</code> attribute specifies the link destination.</p>
+        <pre><code>
+            <a href="https://www.example.com">"Visit Example"</a>
+            <a href="#section">"Jump to Section"</a>
+        </code></pre>
+
+    <h3>Headings</h3>
+    <p>This showcases different heading levels in HTML, from <code>h1</code> to <code>h6</code>. Headings help structure content and indicate hierarchy.</p>
+        <pre><code>
+            <h1>level 1 Main Heading</h1>
+            <h2>level 2 Subheading</h2>
+            <h3>level 3 Sub-subheading</h3>
+            <h4>Level 4 Heading</h4>
+            <h5>Level 5 Heading</h5>
+            <h6>Level 6 Heading</h6>
+        </code></pre>
+
+    <h3>Paragraphs and Line Breaks</h3>
+    <p>This demonstrates how to structure text using paragraphs and line breaks.</p>
+        <pre><code>
+            <p>This is a paragraph of text.</p>
+            <p>This is another paragraph. <br>Here is a line break within the same paragraph.</p>
+        </code></pre>
+
+
+        <h3>Images</h3>
+        <p>This demonstrates how to include images using the <code>img</code> tag. The <code>src</code> attribute specifies the image source, and <code>alt</code> provides alternative text.</p>
+            <pre><code>
+                <img src="image.jpg" alt="A descriptive text about the image">
+            </code></pre>
+
+        <h3>Lists</h3>
+        <p>This demonstrates ordered (<code>ol</code>) and unordered (<code>ul</code>) lists with list items (<code>li</code>).</p>
+            <pre><code>
+                <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                </ul>
+
+                <ol>
+                    <li>First Item</li>
+                    <li>Second Item</li>
+                    <li>Third Item</li>
+                </ol>
+            </code></pre>
+
+            <h3>Tables</h3>
+            <p> This demonstrates how to create tables using the <code>table</code>, <code>tr</code>, <code>th</code>, and <code>td</code> tags.</p>
+                <pre><code>
+                        <table border="1">
+                            <tr>
+                                <th>Name</th>
+                                <th>Age</th>
+                            </tr>
+                            <tr>
+                                <td>John</td>
+                                <td>30</td>
+                            </tr>
+                            <tr>
+                                <td>Jane</td>
+                                <td>25</td>
+                            </tr>
+                        </table>
+                </code></pre>
+
+            <h3>Forms</h3>
+            <p>This demonstrates a basic HTML form with input fields, labels, and a submit button.</p>
+            <pre><code>
+                    <form action="/submit" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+                    <br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                    <br>
+                    <button type="submit">Submit</button>
+            </code></pre>
+
+            <h3>Blockquote</h3>
+            <p>Shows how to use the <code>blockquote</code> tag for quoting text.</p>
+                <pre><code>
+                    <blockquote>
+                     "This is a blockquote example."
+                    </blockquote>
+                </code></pre>
+
+            <h3>Video Embedding</h3>
+            <p>Demonstrates embedding a video using the <code>video</code> tag.</p>
+                    <pre><code>
+                        <video controls>
+                        <source src="video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                        </video>
+                    </code></pre>
+
+            <h3>Table with Caption</h3>
+            <p>Demonstrates a table with a caption for contecxt</p>
+                    <pre><code>
+                        <table border="1">
+                            <caption>Monthly Sales Report</caption>
+                            <tr>
+                                <th>Month</th>
+                                <th>Sales</th>
+                            </tr>
+                            <tr>
+                                <td>January</td>
+                                <td>$10,000</td>
+                            </tr>
+                            <tr>
+                                <td>February</td>
+                                <td>$12,000</td>
+                            </tr>
+                        </table>
+                    </code></pre>   
+                    
+            <h3>Strong and Emphasis</h3>
+            <p>Demonstrates the <code>strong</code> and <code>em</code> tags to emphasize text.</p>
+                <pre><code>
+                        <p>This is <strong>important</strong> and this is <em>emphasized</em>.</p>
+                </code></pre>
+
+            <h3>Time Element</h3>
+            <p>Demonstrates using the <code>time</code> tag to mark up dates or times.</p>
+                    <pre><code>
+                        <p>The meeting is scheduled for <time datetime="2024-12-15T14:00">December 15, 2024, at 2:00 PM</time>.</p>
+                    </code></pre>
+
+            <h3>Semantic Layout Elements</h3>
+            <p>Shows common semantic layout elements for better document structure.</p>
+                    <pre><code>
+                        <header>
+                            <nav>Navigation content</nav>
+                        </header>
+                        <main>
+                            <article>
+                                <section>Article section</section>
+                            </article>
+                            <aside>Sidebar content</aside>    
+                        </main>
+                        <footer>
+                            Footer content
+                        </footer>
+                    </code></pre>
+                    
+                <h3>Figure with Caption</h3>
+                <p>Shows how to use figure and figcaption elements for images with captions.</p>
+                    <pre><code>
+                        <figure>
+                            <img src="diagram.jpg" alt="System diagram">
+                            <figcaption>Figure 1: System Architecture Diagram</figcaption>
+                        </figure>
+                    </code></pre>
+            
+                <h3>Progress and Meter</h3>
+                <p>Demonstrates progress and meter elements for displaying measurements.</p>
+                    <pre><code>
+                        <progress value="70" max="100">70%</progress>
+                        <meter value="0.6">60%</meter>
+                    </code></pre>
+                        
+                             
+       
+</body>
+</html>

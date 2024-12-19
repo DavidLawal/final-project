@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cheetsheet.css">
+</head>
+<body>
+    <a class= "home" href="personal.html">Home</a>
+    <h1 class="head">JavaScript Code Snippet</h1>
+
+    <h3>Variable Declaration</h3>
+    <p>Declaring variables using "let".This snippet demonstrates how to declare a variable using the"let" keyword. 
+        The variable "x" is assigned a value of "10" and logged to the console.
+         Variables declared with "let" are block-scoped and can be updated later.
+    </p>
+    <pre><code>
+        let x = 10;
+        console.log(x);
+    </code></pre>
+
+
+
+    <h3>Functions</h3>
+    <p>Creating reusable code blocks.This example introduces a function named "greet", which takes a parameter "name". 
+        Functions allow encapsulating logic for reuse.
+         This function returns a greeting string using template literals for dynamic text generation. </p>
+    <pre><code>
+        2. Simple function
+        function greet(name) {
+            return `Hello, ${name}!`;
+        }
+        console.log(greet("Alice"));
+    </code></pre>
+
+    <h3>Array manipulation</h3>
+    <p>Adding elements to an array.</p>
+    <pre><code>
+
+        const fruits = ["apple, banana", "cherry"];
+        fruits.push("orange");
+        console.log(fruits); 
+    </code></pre>
+
+    <h3>Loops</h3>
+    <p>It is used to iterate over an array.
+         The snippet demonstrates the "forEach method" which executes a function doe each array elememt. It logs every number in the array to the console</p>
+    <pre><code>
+        const numbers = [1, 2, 3, 4, 5];
+        numbers.forEach(num => console.log(num));
+    </code></pre>
+
+    <h3>Objects</h3>
+    <p>Defining and accessing object properties. This snippet creates an object called "Person" with properties "name" and 
+        "age". It demonstartes accessing object properties using dot notation.
+    </p>
+    <pre><code>
+        const person = {
+            name: "john",
+            age: 30
+        };
+        console.log(person.name);
+    </code></pre>
+
+    <h3>Conditional Statements</h3>
+    <p>Making decisons based on conditions. This snippet uses an "if-else" 
+        statement to chrck if a person is an adult based on their age. 
+        Conditional Statements enable decision-making in code</p>
+
+    <pre><code>
+                const age = 18;
+        if (age >= 18) {
+            console.log("Adult");
+        } else {
+            console.log("Minor");
+        }
+    </code></pre>    
+
+    <h3>Loops</h3>
+    <p>This is repeating codes with condtitons. This example uses a "while" loop to execute a block of code repeatedly while the condtion is true. 
+        It increments a counter until it reaches 5.
+    </p>
+
+    <pre><code>
+                let count = 0;
+            while (count < 5) {
+            console.log(count);
+            count++;
+         }
+    </code></pre>
+
+    <h3>String Manipulation</h3>
+    <p>Changing text case. This snippet demonstrates how to use the "toUpperCase" method to convert a string to uppercase. String manipulation is useful 
+        for formatting text or making case-insensitive comparisons. 
+    </p>
+    <pre><code>
+        const message = "Hello, World!";
+        console.log(message.toUpperCase());
+    </code></pre>
+
+    <h3>Event Handling</h3>
+    <p>Responding to user interactions. This snippet attaches a click event listner to a button. When clicked, the function logs "Button clicked! to the console. Event listners make applications intercative"</p>
+    <pre><code>
+        document.querySelector("button").addEventListener("click", () => {
+            console.log("Button clicked!");
+        });
+    </code></pre>
+
+    <h3>Array Methods</h3>
+    <p>Filtering array elements. This snippet demonstrates the "filter" method, which creates a new array with elements that satisfy the given condition. In this case, it filters numbers greater than 3.</p>
+    <pre><code>
+        const numbers = [1, 2, 3, 4, 5];
+        const filtered = numbers.filter(num => num > 3);
+        console.log(filtered);
+    </code></pre>
+
+    <h3>Array Transformation</h3>
+    <p>Mapping array elements. This snippet demonstrates the "map" method, which creates a new array by applying a function to each element. It doubles the numbers in the array.</p>
+    <pre><code>
+        const numbers = [1, 2, 3, 4, 5];
+        const doubled = numbers.map(num => num * 2);
+        console.log(doubled);
+    </code></pre>
+
+    <h3>Template literals</h3>
+    <p>Creating dynamic strings.This snippet uses template literals to insert variables into a string. It demonstrates cleaner syntax for constructing strings.</p>
+    <pre><code>
+        const name = "Alice";
+        const greeting = `Hello, ${name}!`;
+        console.log(greeting);
+    </code></pre>
+
+    <h3>Spread Operator</h3>
+    <p>Expanding array elemnts. This snippet demonstrates the spread operator, which allows copying elements from one array into another.</p>
+    <pre><code>
+        const numbers = [1, 2, 3];
+        const moreNumbers = [...numbers, 4, 5];
+        console.log(moreNumbers);
+    </code></pre>
+
+    <h3>Destructuring</h3>
+    <p> Extracting values from arrays and objects.This snippet demonstrates destructuring assignment, which extracts specific values into variables.</p>
+    <pre><code>
+        const person = { name: "John", age: 30 };
+        const { name, age } = person;
+        console.log(name, age);
+    </code></pre>
+
+    <h3>Promises</h3>
+    <p>Handling asynchronous operations. This snippet demonstrates a promise that resolves after 2 seconds. It logs a success message when the promise resolves.</p>
+    <pre><code>
+        const promise = new Promise((resolve) => {
+        setTimeout(() => resolve("Done!"), 2000);
+        });
+        promise.then(console.log);
+    </code></pre>
+
+
+
+
+
+
+
+</body>
+</html>
